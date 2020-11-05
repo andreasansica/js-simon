@@ -47,27 +47,21 @@ setTimeout(myFunction, 3000);
     }
     }
      console.log("I numeri inseriti dall'utente sono: " + numeriUtente);
+
+
+     while(numeroOk === false && numeriUtente.length <= tentativi){
+
+   // se il numero dell'utente è sbagliato
+   if (numeroOk = false){
+     numeri.includes(inputUtente)
+   }
+   // altrimenti se è giusto
+   else if (numeroOk = true) {
+     numeriUtente.push(inputUtente);
+     count ++;
+
+   }
+ }
+     console.log("Hai indovinato " + count + " numeri!");
+
   }
-
-
-
-
-
-    while(numeroOk === false && numeriUtente.length <= tentativi){
-  // se il numero dell'utente è sbagliato
-  if (numeroOk = false){
-    numeri.includes(inputUtente)
-  }
-  // altrimenti se è giusto
-  else if (numeroOk = true) {
-    numeriUtente.push(inputUtente);
-    count ++;
-
-  }
-}
-
-setTimeout(risultato, 3000);
-function risultato(){
-console.log("Hai indovinato " + count + " numeri!");
-
-}
