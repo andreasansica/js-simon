@@ -12,7 +12,6 @@ var numeriRandom;
 var numeri = [];
 var numeriUtente = [];
 var inputUtente;
-var numeroOk;
 var count = 0;
 var tentativi = 5;
 
@@ -49,19 +48,32 @@ setTimeout(myFunction, 3000);
      console.log("I numeri inseriti dall'utente sono: " + numeriUtente);
 
 
-     while(numeroOk === false && numeriUtente.length <= tentativi){
 
-   // se il numero dell'utente è sbagliato
-   if (numeroOk = false){
-     numeri.includes(inputUtente)
-   }
-   // altrimenti se è giusto
-   else if (numeroOk = true) {
-     numeriUtente.push(inputUtente);
-     count ++;
+     for (var i = 0; i < numeriUtente.length; i++) {
+       if (numeriUtente === numeri) {
+         count ++;
+       }
+       console.log("Hai indovinato " + count + " numeri!");
+     }
 
-   }
- }
-     console.log("Hai indovinato " + count + " numeri!");
+
 
   }
+
+
+
+
+
+  // while(numeroOk === false && numeriUtente.length <= tentativi){
+  //
+  // // se il numero dell'utente è sbagliato
+  // if (numeroOk == false){
+  // numeri.includes(inputUtente)
+  // }
+  // // altrimenti se è giusto
+  // else if (numeroOk == true) {
+  // numeriUtente.push(inputUtente);
+  // count ++;
+  //
+  // }
+  // }
