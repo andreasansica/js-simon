@@ -50,7 +50,7 @@ setTimeout(myFunction, 3000);
 
 
      for (var i = 0; i < numeriUtente.length; i++) {
-       if (numeriUtente === numeri) {
+       if (numeri.includes(numeriUtente[i])) {
          count ++;
        }
        console.log("Hai indovinato " + count + " numeri!");
@@ -59,21 +59,3 @@ setTimeout(myFunction, 3000);
 
 
   }
-
-
-
-
-
-  // while(numeroOk === false && numeriUtente.length <= tentativi){
-  //
-  // // se il numero dell'utente è sbagliato
-  // if (numeroOk == false){
-  // numeri.includes(inputUtente)
-  // }
-  // // altrimenti se è giusto
-  // else if (numeroOk == true) {
-  // numeriUtente.push(inputUtente);
-  // count ++;
-  //
-  // }
-  // }
