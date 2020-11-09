@@ -13,7 +13,7 @@ var numeri = [];
 var numeriUtente = [];
 var inputUtente;
 var count = 0;
-var tentativi = 5;
+var numGiusti = [];
 
 // genero lista numeri random
 
@@ -25,6 +25,8 @@ while (numeri.length < 5) {
   numeri.push(numeriRandom);
 }
 }
+alert(numeri);
+
  console.log("I numeri random sono: " + numeri);
 
 
@@ -51,11 +53,15 @@ setTimeout(myFunction, 3000);
 
      for (var i = 0; i < numeriUtente.length; i++) {
        if (numeri.includes(numeriUtente[i])) {
+         numGiusti.push(numeriUtente[i])
          count ++;
        }
-       console.log("Hai indovinato " + count + " numeri!");
      }
+     console.log("Hai indovinato " + count + " numeri!");
+     if (numGiusti.length > 1) {
+       console.log("Hai ricordato " + numGiusti);
 
+     }
 
 
   }
